@@ -1,36 +1,36 @@
 import React from 'react'
-import Card from './Card' ;
+import Card from '../CareersCard/Card' ;
 
-import python from '../../assets/careers_python.png';
-import android from '../../assets/careers_android.png';
-import ios from '../../assets/ios.png';
-import marketing from '../../assets/marketing.png';
-import react from '../../assets/react.png';
-class CareersCard extends React.PureComponent { 
+import python from '../../assets/internPython.png';
+import android from '../../assets/internAndroid.png';
+import ios from '../../assets/internIos.png';
+import marketing from '../../assets/internMarketing.png';
+import react from '../../assets/internReact.png';
+class Interns extends React.PureComponent { 
     
 response= {
     "data":[{
             "Image" :python,
-            "Text" :"Backend Developer(Python)",
-            "Link" : 'https://docs.google.com/forms/d/1mWO5HvI2MWWaH-v0dVEBqv4yM1RfGlryRwp76Y7h0RY',
+            "Text" :"Backend Intern",
+            "Link" : 'https://docs.google.com/forms/d/1vvbFMxgxYPDR5XSWyC-wUTtVAF7VVodQ-lOS_faimb0',
             },{
             "Image" :android,
-            "Text" :"Android Developer",
-            "Link":"https://docs.google.com/forms/d/1aPgfreOchWLeX1oN_Wb2vPhmdsWAw26VgluA9Wwk3y0",
+            "Text" :"Android Intern",
+            "Link":"https://docs.google.com/forms/d/1V3ot8fdrnPy1lJjqhjq7BFYe3qcfI_T2dC4oKWKtPow",
             },
             {
             "Image" :ios,
-            "Text" :"iOS Developer",
-            "Link":"https://docs.google.com/forms/d/1bcHjrfx_RkR-S5W9CVkvbjG5UrduKMS_bfszl9RwMnQ"
+            "Text" :"iOS Intern",
+            "Link":"https://docs.google.com/forms/d/1G9Xrj1rVa5CciZJMnzvuMTXCgiAahEa3nDOVMJmz7YA"
             },
             {
             "Image" :marketing,
             "Text" :"Digital Marketing",
-            "Link":"https://docs.google.com/forms/d/1aPgfreOchWLeX1oN_Wb2vPhmdsWAw26VgluA9Wwk3y0"
+            "Link":"https://docs.google.com/forms/d/1Z26PhyhdHuWS1mKyvnk_jR5pNugAFt5gXoYB-cFj5e8"
             },{
             "Image" :react,
             "Text" :"React/React Native Developer",
-            "Link":"https://docs.google.com/forms/d/1mDA2QrZuX3x_fZPGyVkTlzlRgFLu1L6cpZB3Kxvc_iQ"
+            "Link":"https://docs.google.com/forms/d/1HB0LZbT5VHX6phHJgy4lX5Ln44X3YFQHPyQngxTIgeA/"
             }
         ]
 }
@@ -62,4 +62,4 @@ imageInjector = () => {
     }
 }
 
-export default CareersCard;
+export default Interns;
