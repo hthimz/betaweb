@@ -3,13 +3,14 @@ import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import Header from '../Header/Header';
 import { hero, doubleQuotes, text, careerText, careerText1, careerText2, careerText3 } from './styles';
+import hero1 from '../../assets/career_banner.png';
 
 class CareerBanner extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       currentScrollHeight: 0,
-      image: ['live_scoring.png', 'grounds.png', 'user_profile.png','phone_view.png']
+      // image: ['live_scoring.png', 'grounds.png', 'user_profile.png','phone_view.png']
     }
   }
   componentDidMount() {

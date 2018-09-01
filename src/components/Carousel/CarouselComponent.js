@@ -3,6 +3,15 @@ import { Carousel } from 'react-responsive-carousel';
 import styles from 'react-responsive-carousel/lib/styles/carousel.min.css';
 import Card from '../Card/Card';
 
+import avijeet from '../../assets/avijeet.png';
+import hero from '../../assets/hero.png';
+import anupam from '../../assets/anupam.png';
+import praveen from '../../assets/praveen.png';
+import rashid from '../../assets/rashid.png';
+import ca from '../../assets/ca.png';
+import ajeet from '../../assets/ajeet.png';
+import laksh from '../../assets/laksh.png';
+
 export default class CarouselComponent extends Component {
     response ={
         "data": [
@@ -10,19 +19,19 @@ export default class CarouselComponent extends Component {
         "Name": "Avijeet Singh Gumber",
         "Designation": "CEO,GoPlayBook",
         "SportsType": "Football",
-        "image" : "../../assets/avijeet.png"
+        "image" : avijeet
         },
         {
         "Name": "Himanshu Tomar",
         "Designation": "Full stack Developer",
         "SportsType": "Basketball",
-        "image" : "../../assets/hero.png"
+        "image" : hero
         },
         {
         "Name": "Anupam Pareek",
         "Designation": "Product Manager",
         "SportsType": "Football",
-        "image":"../../assets/anupam.png"
+        "image":anupam
             },
         // ,
     ]
@@ -33,19 +42,19 @@ export default class CarouselComponent extends Component {
                 "Name": "Praveen Verma",
                 "Designation": "Lead Android Developer",
                 "SportsType": "Cricket",
-                "image" :"../../assets/praveen.png"
+                "image" :praveen
                         },
                 {
                 "Name": "Rashid Abdul Rahiman",
                 "Designation": "Digital Marketing Manager",
                 "SportsType": "Football",
-                "image" : "../../assets/rashid.png"
+                "image" : rashid
                     },
                 {
                 "Name": "Gautam Kapoor",
                 "Designation": "Financial Keeper",
                 "SportsType": "Football",
-                "image" :"../../assets/gautam.png"
+                "image" :ca
                     }
         ]
     }
@@ -56,13 +65,13 @@ export default class CarouselComponent extends Component {
                 "Name": "Ajeet Chaudhary",
                 "Designation": "Community Manager (Cricket)",
                 "SportsType": "Cricket",
-                "image" :"../../assets/ajeet.png"
+                "image" :ajeet
                         },
                 {
                 "Name": "Laksh Rajpal",
                 "Designation": "Community Manager (Football)",
                 "SportsType": "Football",
-                "image":"../../assets/laksh.png"
+                "image":laksh
 
                     }
         ]

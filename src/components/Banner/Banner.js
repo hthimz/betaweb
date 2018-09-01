@@ -3,6 +3,11 @@ import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import Header from '../Header/Header';
 import { contents, learnMore, bannerText, bannerTextHeader, hero, phone, home, leaf, left, right } from './styles';
+import live_scoring from '../../assets/live_scoring.png'; 
+import grounds from '../../assets/grounds.png'; 
+import user_profile from '../../assets/user_profile.png';
+import phone_view from '../../assets/phone_view.png';
+import selected from '../../assets/selected.png';
 
 class Banner extends React.Component {
   constructor(props) {
@@ -10,7 +15,7 @@ class Banner extends React.Component {
     this.state = {
       screen: 0,
       currentScrollHeight: 0,
-      image: ['live_scoring.png', 'grounds.png', 'user_profile.png','phone_view.png']
+      image: [live_scoring, grounds, user_profile,phone_view]
     }
   }
   componentDidMount() {
@@ -32,7 +37,7 @@ class Banner extends React.Component {
   active = i => {
     if (this.state.screen === i) {
       return (
-        <img src='/assets/selected.png' style={{width: '36px', height: '36px'}}/>
+        <img src={selected} style={{width: '36px', height: '36px'}}/>
       );
     } else {
       return (
@@ -86,7 +91,7 @@ class Banner extends React.Component {
   
   bannerNavigator = i => {
     return (
-      <div className={classNames("d-flex flex-column justify-content-between h-50")}>
+      <div className={classNames("h-50")} style={{display :'flex' , flexDirection :'column', justifyContent:'space-between'}}>
         <div className={classNames(leaf,i<2 ? left:right )} style={this.state.screen === i ? {backgroundColor: '#32a027'}: null}>
           <div className={classNames('d-flex')}>
             {this.active(i)}
@@ -113,9 +118,9 @@ class Banner extends React.Component {
           </div>
           <div className={contents}>
             <div className={home}>Talent meets Recognition</div>
-            <img src={`/assets/${this.state.image[this.state.screen]}`} className={phone}/>
+            <img src={`${this.state.image[this.state.screen]}`} className={phone}/>
           </div>
-          <div className={classNames("d-flex w-100 justify-content-start align-items-center")}>
+          <div className={classNames("d-flex w-100 justify-content-start align-items-center")} >
             {this.bannerNavigator(2)}
           </div>
         </div>

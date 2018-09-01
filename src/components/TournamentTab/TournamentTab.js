@@ -8,6 +8,13 @@ import UserDetailsCard from '../UserDetailsCard/UserDetailsCard';
 import tournamentCard from '../TournamentCard/TournamentCard';
 import { indicator, text, tab, underline, btn } from './styles';
 import classNames from 'classnames';
+
+import tourn1 from '../../assets/tourn1.jpg';
+import tourn2 from '../../assets/tourn2.jpg';
+import tourn3 from '../../assets/tourn3.jpg';
+import ground1 from '../../assets/ground1.jpg';
+import ground2 from '../../assets/ground2.jpg';
+import ground3 from '../../assets/ground3.jpg';
 export default class TournamentTab extends React.PureComponent {
   state = {
     value: 0,
@@ -21,18 +28,18 @@ export default class TournamentTab extends React.PureComponent {
      "Name": "Champions League",
      "Location": "Mumbai",
      "type": "Football",
-     "image":"../../assets/tourn1.jpg"
+     "image":tourn1
    },
    {
     "Name": "Adidas Premier League",
     "Location": "Delhi",
     "type": "Football",
-    "image":"../../assets/tourn2.jpg"
+    "image":tourn2
   },{
     "Name": "Times Pro League",
     "Location": "Vishakapatnam",
     "type": "Cricket",
-    "image":"../../assets/tourn3.jpg"
+    "image":tourn3
   }
   ]
  }
@@ -42,18 +49,18 @@ export default class TournamentTab extends React.PureComponent {
     "Name": "Astro World",
     "Location": "Mumbai",
     "type": "Football",
-    "image":"../../assets/ground1.jpg"
+    "image":ground1
   },
   {
    "Name": "Triki-Taka",
    "Location": "Mumbai",
    "type": "Football",
-   "image":"../../assets/ground2.jpg"
+   "image":ground2
  },{
    "Name": "Adidas- The Base",
    "Location": "Delhi",
    "type": "Football",
-   "image":"../../assets/ground3.jpg"
+   "image":ground3
  }
  ]
 }

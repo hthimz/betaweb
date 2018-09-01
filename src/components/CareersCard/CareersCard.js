@@ -1,22 +1,27 @@
 import React from 'react'
 import Card from './Card' ;
 
+import python from '../../assets/careers_python.png';
+import android from '../../assets/careers_android.png';
+import ios from '../../assets/ios.png';
 class CareersCard extends React.PureComponent { 
     
 response= {
     "data":[{
-            "Image" :"../../assets/careers_python.png",
+            "Image" :python,
             "Text" :"Backend Developer(Python)",
             "Link" : 'https://docs.google.com/forms/d/1vvbFMxgxYPDR5XSWyC-wUTtVAF7VVodQ-lOS_faimb0',
             },{
-            "Image" :"../../assets/careers_android.png",
+            "Image" :android,
             "Text" :"Android Developer",
             "Link":"https://docs.google.com/forms/d/1V3ot8fdrnPy1lJjqhjq7BFYe3qcfI_T2dC4oKWKtPow",
             },
+            {
+            "Image" :ios,
+            "Text" :"iOS Developer",
+            "Link":"https://docs.google.com/forms/d/1bcHjrfx_RkR-S5W9CVkvbjG5UrduKMS_bfszl9RwMnQ/edit"
+            },
             // {
-            // "Image" :"../../assets/careers_python.png",
-            // "Text" :"Python Developer"
-            // },{
             // "Image" :"../../assets/careers_python.png",
             // "Text" :"Python Developer"
             // },{

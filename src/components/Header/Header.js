@@ -3,6 +3,11 @@ import PropTypes from 'prop-types';
 import { maindivHeader, text, logo, textLight, shake } from './styles';
 import classNames from 'classnames';
 import goplaybooklogo from '../../assets/goplaybooklogo.png';
+import playstore from '../../assets/playstoreicon.png';
+import apple from '../../assets/appstoreicon.png';
+// import shaker from '../..assets/download_app.png';
+import shaker from '../../assets/downloadapp.png';
+
 // import imer from '..'
 class Header extends React.PureComponent {
   colour = (i,j,val) => {
@@ -30,20 +35,22 @@ class Header extends React.PureComponent {
           <a href='#blogs' style={{textDecoration: 'none'}}><div className={textLight}>Blogs</div></a>
           <div href='#'className={textLight}>Partners Program</div>
         </div>
-        <div className={logo}>
-          <img src={goplaybooklogo} style={{height:'45px', width:'45px', marginRight: '20px'}} />
-          <div className={text}>goplaybook</div>
-        </div>
-        <div className={logo}>
-          <div className={classNames('shake-fixed shake-constant', shake)}>
-            <img src="assets/download_app.png" style={{height:'30px', width:'30px', marginRight:'16px'}} />
-          </div>
+          <a href='http://www.goplaybook.com' style= {{textDecoration :'none'}}>
+          <div className={logo}>
+                    <img src={goplaybooklogo} style={{height:'45px', width:'45px', marginRight: '20px'}} />
+                    <div className={text}>goplaybook</div>
+              </div> 
+          </a> 
+             <div className={logo}>
+              <div className={classNames('shake-fixed shake-constant', shake)}>
+                <img src={shaker} style={{height:'30px', width:'30px', marginRight:'16px'}} />
+            </div>
           <div className={textLight}>Download App</div>
           <a href="https://play.google.com/store/apps/details?id=com.goplaybook&hl=en_US" target="_blank">
-            <img src="/assets/playstoreicon.png" style={{height:'30px', width:'30px', marginRight:'16px'}} />
+            <img src={playstore} style={{height:'30px', width:'30px', marginRight:'16px'}} />
           </a>
           <a href="https://itunes.apple.com/us/app/goplaybook/id1332966913" target="_blank">
-            <img src="/assets/appstoreicon.png" style={{height:'30px', width:'30px', marginRight:'16px'}} />
+            <img src={apple} style={{height:'30px', width:'30px', marginRight:'16px'}} />
           </a>
         </div>
       </div>

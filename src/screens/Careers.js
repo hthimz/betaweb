@@ -5,13 +5,6 @@ class LandingPage extends React.Component {
   render() {
     return (
         <div>
-            {/* <Banner />
-            <TournamentTab />
-            <Videos />
-            <Blogs />
-            <About />
-            <CarouselComponent/>
-            <Footer/> */}
             <CareerBanner/>
             <CareersCard />
         </div>

@@ -1,6 +1,10 @@
 import React from 'react';
 import tournamentCard from '../TournamentCard/TournamentCard';
 
+import blog_ronaldo from '../../assets/blog_ronaldo.png';
+import blog_roger from '../../assets/blog_roger.png';
+import blog_hazard from '../../assets/blog_hazard.png';
+
 export default class Blogs extends React.PureComponent {
   state = {
     value: 0,
@@ -14,18 +18,18 @@ export default class Blogs extends React.PureComponent {
       "Name": "Ronaldo Joins Juventus",
       "Location": "21 Aug 2018",
       "type": "Football",
-      "image": "../../assets/blog_ronaldo.png"
+      "image": blog_ronaldo
     },
     {
       "Name": "Roger That! wins",
     "Location": "21 Aug 2018",
     "type": "Football",
-    "image": "../../assets/blog_roger.png"
+    "image": blog_roger
   },{
     "Name": "Eden Hazard Happy to win",
     "Location": "21 August 2018",
     "type": "Football",
-    "image": "../../assets/blog_hazard.png"
+    "image": blog_hazard
   }
   ]
   }
@@ -33,7 +37,7 @@ export default class Blogs extends React.PureComponent {
  blog = () => {
    return (
     <div id='blogs' style={{background: '#32a027', paddingTop: '50px'}}>
-        <div style={{fontSize: '26px',fontWeight: 'bold', fontFamily:'Helvetica Neue', marginLeft:'100px', color:'white'}}>Blogs</div>
+        <div style={{fontSize: '26px',fontWeight: 'bold', display:'flex', fontFamily:'Helvetica Neue', marginLeft:'100px', color:'white'}}>Blogs</div>
               <div style={{display:'flex', paddingTop: '10px', color:'white'}}>
                 <div style={{fontFamily:'Roboto', marginLeft:'100px'}}>Read the</div>
                 <div style={{fontWeight:'bold'}}>&nbsp;INTERESTING&nbsp;</div>
