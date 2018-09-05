@@ -7,6 +7,7 @@ import About from '../components/About/About';
 import Videos from '../components/Videos/Videos';
 import Blogs from '../components/Blogs/Blogs';
 import Footer from '../components/Footer/Footer';
+import CardExampleCard from '../components/TabTournamentCard/Card';
 
 
 // import CardExampleCard from '../components/TabTournamentCard/Card';

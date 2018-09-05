@@ -61,10 +61,11 @@ padding-left: 0.8rem;
 
 export const bannerText = css`
 font-family: Helvetica Neue;
-font-size: 0.875rem;
+font-size: 14px;
 font-stretch: condensed;
 width: 270px;
-padding-left: 1.1rem;
+padding-left: 10px;
+
 `
 
 export const learnMore = css`

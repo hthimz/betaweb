@@ -17,7 +17,7 @@ class LandingPage extends React.Component {
             <div style= {{paddingTop:'150px'}}><Footer /></div>
         </div>
         );
-            }
+        }
 }
 
 export default LandingPage;

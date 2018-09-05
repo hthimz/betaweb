@@ -54,3 +54,17 @@ export const boxShadow = css`
 -moz-box-shadow: -2px 5px 20px -5px rgba(0,0,0,0.2);
 box-shadow: -2px 5px 20px -5px rgba(0,0,0,0.2);
 `
+
+export const horizontal = css`
+background-color: #faf;
+min-width: 100%;
+min-height: 200px;
+overflow-x: auto;
+display: flex ;
+`
+
+export const cardContent = css`
+background-color: #e74c3c;
+width: 200px;
+margin: 5px;
+`
