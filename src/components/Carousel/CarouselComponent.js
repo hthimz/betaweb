@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import styles from 'react-responsive-carousel/lib/styles/carousel.min.css';
 import Card from '../Card/Card';
+import {header} from './styles';
 
 import avijeet from '../../assets/avijeet.png';
 import hero from '../../assets/hero.png';
@@ -18,7 +19,7 @@ export default class CarouselComponent extends Component {
         {
         "Name": "Avijeet Singh Gumber",
         "Designation": "CEO,GoPlayBook",
-        "SportsType": "Football",
+        "SportsType": "Football & Cricket",
         "image" : avijeet
         },
         {
@@ -109,11 +110,11 @@ export default class CarouselComponent extends Component {
     render() {
         return (
             <div style={{background: '#32a027'}}>
-                <div style={{fontSize: '26px',fontWeight: 'bold', fontFamily:'Helvetica Neue', marginLeft:'100px', marginTop:'66px', paddingTop: '30px', color:'white'}}>
+                <div style={{display :'flex',fontSize: '26px',fontWeight: 'bold', fontFamily:'Helvetica Neue', marginLeft:'100px', marginTop:'66px', paddingTop: '30px', color:'white'}}>
                     GoPlayBook Team
                 </div>
                 <div style={{display:'flex', paddingTop: '10px', color:'white'}}>
-                    <div style={{fontFamily:'Roboto', marginLeft:'100px'}}>The Reason why GoPlayBook exists today.</div>
+                    <div className={header}>The Reason why GoPlayBook exists today.</div>
                 </div>
                     <Carousel
                         autoPlay

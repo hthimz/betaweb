@@ -1,5 +1,6 @@
 import React from "react";
 import Slider from "react-slick";
+import  {video} from './style';
 // import { thinLeft, thinRight } from 'react-icons-kit/entypo'
 import VideoCarousel from '../VideoCarousel/VideoCarousel';
 
@@ -46,7 +47,7 @@ export default class Videos extends React.PureComponent {
     const id='6k-6Wi-HW5k';
     return (
       <div style={{ backgroundColor: '#ffffff', opacity:1}}>
-        <div style={{fontFamily: 'Helvetica Neue ', fontStretch: 'condensed',fontSize: '30px', color: '#000000',fontWeight: 'bold', paddingTop:'20px', marginLeft:'100px', paddingLeft:'90px'}}>
+        <div className ={video}>
           Social Media Presence
         </div>
       <div className={'d-flex justify-content-center mt-4'}>

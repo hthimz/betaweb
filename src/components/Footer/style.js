@@ -9,10 +9,18 @@ export const footer = css`
 `
 
 export const btn = css`
-    border: none;
-    background: none;
+    
+    background: #333333;
     outline: none !important;
     font-family: Roboto;
     font-weight: bold;
     color: white;
-`
+    padding : 10px;
+    border-radius: 5px;
+    position: relative;
+    transition: all 500ms ease;
+    box-sizing: border-box;
+    `
+    
+        
+    
