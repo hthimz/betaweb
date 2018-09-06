@@ -1,5 +1,6 @@
 import React from 'react'
 import { footer, btn } from './style';
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 export default class Footer extends React.PureComponent {
 
     render() {
@@ -7,7 +8,8 @@ export default class Footer extends React.PureComponent {
         return (
     <div>
         <div className={footer}>
-            <button className={btn} onClick={()=>this.props.navigate('/careers')}>Careers</button>
+            {/* <button className={btn} onClick={()=>this.props.navigate('/careers')}>Careers</button> */}
+            <Link to = '/careers'><button className={btn}>Careers</button> </Link>
             <button className={btn}>Contact Us</button>
             <button className={btn}>About Us</button>
             <button className={btn}>Register Ground</button>
