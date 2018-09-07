@@ -1,8 +1,9 @@
 import { css } from 'react-emotion'
 // import hero from ''
+import heroImage from '../../assets/career_banner.png';
 
 export const hero = css`
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../../assets/career_banner.png");
+    background-image: url(${heroImage});
     height: 570px;
     background-position: center;
     background-repeat: no-repeat;
