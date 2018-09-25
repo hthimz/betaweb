@@ -12,25 +12,25 @@ response= {
     "data":[{
             "Image" :python,
             "Text" :"Backend Developer(Python)",
-            "Link" : 'https://docs.google.com/forms/d/1mWO5HvI2MWWaH-v0dVEBqv4yM1RfGlryRwp76Y7h0RY',
+            "Link" : 'https://docs.google.com/forms/d/1xe31vei05f76snE6otmeRKfYKy_Sfn8qWkKGzexudyY',
             },{
             "Image" :android,
             "Text" :"Android Developer",
-            "Link":"https://docs.google.com/forms/d/1aPgfreOchWLeX1oN_Wb2vPhmdsWAw26VgluA9Wwk3y0",
+            "Link":"https://docs.google.com/forms/d/1IL9AIBiseIJqGWNE_kUahozdmZiqqXwCF0bxtrCyOQ4",
             },
             {
             "Image" :ios,
             "Text" :"iOS Developer",
-            "Link":"https://docs.google.com/forms/d/1bcHjrfx_RkR-S5W9CVkvbjG5UrduKMS_bfszl9RwMnQ"
+            "Link":"https://docs.google.com/forms/d/19OYp7SWy81CD3dMm63B4aHkQ23Y__K5WH32676lhVbo"
             },
             {
             "Image" :marketing,
             "Text" :"Digital Marketing",
-            "Link":"https://docs.google.com/forms/d/1aPgfreOchWLeX1oN_Wb2vPhmdsWAw26VgluA9Wwk3y0"
+            "Link":"https://docs.google.com/forms/d/1uEa3dvNUYntjQ54dUOmvypI_rciCWGDYFGp0CYc3bcw"
             },{
             "Image" :react,
             "Text" :"React/React Native Developer",
-            "Link":"https://docs.google.com/forms/d/1mDA2QrZuX3x_fZPGyVkTlzlRgFLu1L6cpZB3Kxvc_iQ"
+            "Link":"https://docs.google.com/forms/d/1DGhISd8cpvn3jg3vMsBiZy5nwUJgt5sZICXXXhkR0TE"
             }
         ]
 }
