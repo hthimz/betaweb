@@ -13,8 +13,5 @@ import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 // import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 // import 'bootstrap/dist/css/bootstrap.min.css';
-<div>
-    
-</div>
 ReactDOM.render(<App />, document.getElementById('root'));
 registerServiceWorker();

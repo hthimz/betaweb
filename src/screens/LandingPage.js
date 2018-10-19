@@ -8,7 +8,8 @@ import Videos from '../components/Videos/Videos';
 import Blogs from '../components/Blogs/Blogs';
 import Footer from '../components/Footer/Footer';
 import CardExampleCard from '../components/TabTournamentCard/Card';
-
+import Blog from '../components/TabBlog/Blog';
+import Tab2Tournament from '../components/TabTournament2/Tab2Tournament';
 
 // import CardExampleCard from '../components/TabTournamentCard/Card';
 class LandingPage extends React.Component {
@@ -20,14 +21,17 @@ class LandingPage extends React.Component {
     console.log(this.props);
     return (
       <div>
-          <Banner />
+          {/* <Banner />
           <TournamentTab />
           <Videos />
           <Blogs />
           <About />
           <CarouselComponent />
           <Footer navigate={path=>this.nextPath(path)}/>
-          {/* <CardExampleCard /> */}
+          <CardExampleCard />
+          <Blog /> */}
+          <Tab2Tournament />
+          
       </div>
     );
   }

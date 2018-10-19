@@ -59,6 +59,7 @@ class About extends Component{
                         i,
                         'Sports Network for Players'
                         ));
+              default: return null;
           }
       }
  
@@ -87,7 +88,7 @@ class About extends Component{
                                 </div>
                             </div>
                             <div className={'d-flex w-100 justify-content-end'} style={{marginTop: '-447px'}}>
-                            <img src={`${this.state.image[this.state.screen]}`} style = {{width:'560px' ,height:'500px'}}/>
+                            <img src={`${this.state.image[this.state.screen]}`} alt='mobile view' style = {{width:'560px' ,height:'500px'}}/>
                             </div>
                         </div>              
                     </div>

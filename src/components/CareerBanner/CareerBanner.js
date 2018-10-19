@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import Header from '../Header/Header';
-import { hero, doubleQuotes, text, careerText, careerText1, careerText2, careerText3 } from './styles';
+import { hero,doubleQuotes, text, careerText, careerText1, careerText2, careerText3 } from './styles';
 import hero1 from '../../assets/career_banner.png';
 
 class CareerBanner extends React.Component {
@@ -19,7 +19,7 @@ class CareerBanner extends React.Component {
         this.setState({currentScrollHeight: window.scrollY});
       } else {
         const newScrollHeight = Math.ceil(window.scrollY / 50) *50;
-        if (this.state.currentScrollHeight != newScrollHeight){
+        if (this.state.currentScrollHeight !== newScrollHeight){
             this.setState({currentScrollHeight: newScrollHeight})
       }
       }

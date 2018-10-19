@@ -1,4 +1,8 @@
 import { css } from 'react-emotion'
+import bgTournament from '../../assets/bgTournament.png';
+import tournamentBannerImage1 from '../../assets/tournamentBannerImage1.png';
+import tournamentBannerImage2 from '../../assets/tournamentBannerImage2.png';
+import tournamentBannerImage3 from '../../assets/tounramentBannerImage3.png';
 
 export const center = css`
     display: flex;
@@ -56,7 +60,7 @@ box-shadow: -2px 5px 20px -5px rgba(0,0,0,0.2);
 `
 
 export const horizontal = css`
-background-color: #faf;
+
 min-width: 100%;
 min-height: 200px;
 overflow-x: auto;
@@ -64,7 +68,44 @@ display: flex ;
 `
 
 export const cardContent = css`
-background-color: #e74c3c;
-width: 200px;
+width: 400px;
 margin: 5px;
+`
+
+export const b1 = css`
+background-image: url(${tournamentBannerImage1});
+width: 400px;
+margin: 5px;
+`
+
+
+export const b2 = css`
+background-image: url(${tournamentBannerImage2});
+width: 400px;
+margin: 5px;
+`
+
+
+export const b3 = css`
+background-image: url(${tournamentBannerImage3});
+width: 400px;
+margin: 5px;
+`
+
+export const gradient = css`
+height: 100px;
+background-image: linear-gradient(0deg, black, white);
+
+`
+
+
+export const banner = css `
+position: absolute;
+min-width: 100% ;
+height: 400px ;
+background-image: url(${bgTournament});
+margin:0;
+display: flex;
+justify-content: center ;
+align-items: center ;
 `

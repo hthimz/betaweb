@@ -4,7 +4,6 @@ import classNames from "classnames";
 import Header from "../Header/Header";
 import {
   contents,
-  learnMore,
   bannerText,
   bannerTextHeader,
   hero,
@@ -55,7 +54,7 @@ class Banner extends React.Component {
         this.setState({ currentScrollHeight: window.scrollY });
       } else {
         const newScrollHeight = Math.ceil(window.scrollY / 50) * 50;
-        if (this.state.currentScrollHeight != newScrollHeight) {
+        if (this.state.currentScrollHeight !== newScrollHeight) {
           this.setState({ currentScrollHeight: newScrollHeight });
         }
       }
@@ -66,7 +65,7 @@ class Banner extends React.Component {
   }
   active = i => {
     if (this.state.screen === i) {
-      return <img src={selected} style={{ width: "36px", height: "36px" }} />;
+      return <img src={selected} alt='selected' style={{ width: "36px", height: "36px" }} />;
     } else {
       return (
         <button
@@ -277,6 +276,7 @@ class Banner extends React.Component {
             <img
               src={`${this.state.image[this.state.screen]}`}
               className={phone}
+              alt='phone'
             />
           </div>
           <div

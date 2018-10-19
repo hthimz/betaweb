@@ -1,12 +1,13 @@
 import React from 'react'
 import { Card, Icon, Image } from 'semantic-ui-react';
 import classNames from 'classnames';
-import { center, card ,image, outer, content, header, fix, boxShadow , horizontal, cardContent} from './styles'
+import { center, card ,image, outer, content, header, fix, boxShadow , gradient,horizontal, cardContent,banner,b1,b2,b3} from './styles'
 // import { NewsHeaderCard } from 'react-ui-cards';
 
 import ReactDOM from 'react-dom';
 import Coverflow from 'react-coverflow';
 
+import bgTournament from '../../assets/bgTournament.png';
 export default class CardExampleCard extends React.Component {
   constructor(props) {
     super(props);
@@ -27,16 +28,18 @@ export default class CardExampleCard extends React.Component {
       //     navigation={true}
       //     enableHeading={false}
       //     active={this.state.active}
-      //   >
+      //   
       //     <div
       //       // onClick={() => fn()}
       //       // onKeyDown={() => fn()}
       //       role="menuitem"
       //       tabIndex="0"
+      //       this is my product tso dont mess with it bruh.
+      //
       //     >
       //     </div>
       //     <img src='https://images.pexels.com/photos/47730/the-ball-stadion-football-the-pitch-47730.jpeg' alt='Album one' />
-
+      //                                  
       //     <img src='http://e1.365dm.com/18/07/16-9/20/skysports-cristiano-ronaldo_4353998.jpg' alt='Album two' data-action="http://passer.cc"/>
       //     <img src='http://e1.365dm.com/18/07/16-9/20/skysports-cristiano-ronaldo_4353998.jpg' alt='Album three' data-action="https://doce.cc/"/>
       //     <img src='http://e1.365dm.com/18/07/16-9/20/skysports-cristiano-ronaldo_4353998.jpg' alt='Album four' data-action="http://tw.yahoo.com"/>
@@ -50,23 +53,89 @@ export default class CardExampleCard extends React.Component {
       //   </Coverflow>
       // </div>
       
-      <div style={{width:'2000px',height:'400px', backgroundColor:'#000',margin:'0',display:'flex',justifyContent:'center',alignItems:'center'}}>
+      <div>
+        <div className={banner} style={{display:'flex',flexDirection:'column'}}>
+        <div style={{display:'flex',justifyContent:'start !important',color:'#FFFFFF'}}>
+          Tournaments Happening Around You
+        </div>
+        <div>
         <div className={horizontal}>
         
-        <div className={cardContent}>something</div>
-        <div className={cardContent}>Anything</div>
-        <div className={cardContent}>Thing Thing</div>
-        <div className={cardContent}>Your Thing</div>
-        <div className={cardContent}>Trure Thing</div>
-        <div className={cardContent}>Wow Nigger</div>
-        <div className={cardContent}>Much Wower</div>
-        <div className={cardContent}>What The duck</div>
-        <div className={cardContent}>Quack Quack</div>
-        <div className={cardContent}>Duck Bro</div>
-        <div className={cardContent}>This Is Test</div>
+        <div className={b1} style={{display:'flex',flexDirection:'column'}}>
+        <div style={{display:'flex',paddingTop:'120px',paddingLeft:'30px',fontFamily:'Roboto !important',fontSize:'25px',fontWeight:'bold !important',color:'#FFFFFF'}}>Something To be Achieved</div>
+        <div style={{display:'flex',paddingLeft:'30px',fontFamily:'Roboto !important',color:'#FFFFFF'}}>Football</div>
+        <div style={{display:'flex',paddingLeft:'30px',fontFamily:'Roboto !important',color:'#FFFFFF'}}>New Delhi</div>
+        </div>
+        
+        <div className={b2}>
+        <div style={{display:'flex',paddingTop:'120px',paddingLeft:'30px',fontFamily:'Roboto !important',fontSize:'25px',fontWeight:'bold !important',color:'#FFFFFF'}}>Something To be Achieved</div>
+        <div style={{display:'flex',paddingLeft:'30px',fontFamily:'Roboto !important',color:'#FFFFFF'}}>Football</div>
+        <div style={{display:'flex',paddingLeft:'30px',fontFamily:'Roboto !important',color:'#FFFFFF'}}>New Delhi</div>
+        </div>
+        
+        <div className={b3}>
+        <div style={{display:'flex',paddingTop:'120px',paddingLeft:'30px',fontFamily:'Roboto !important',fontSize:'25px',fontWeight:'bold !important',color:'#FFFFFF'}}>Something To be Achieved</div>
+        <div style={{display:'flex',paddingLeft:'30px',fontFamily:'Roboto !important',color:'#FFFFFF'}}>Football</div>
+        <div style={{display:'flex',paddingLeft:'30px',fontFamily:'Roboto !important',color:'#FFFFFF'}}>New Delhi</div>
+        </div>
+        
+        <div className={b1}>
+        <div style={{display:'flex',paddingTop:'120px',paddingLeft:'30px',fontFamily:'Roboto !important',fontSize:'25px',fontWeight:'bold !important',color:'#FFFFFF'}}>Something To be Achieved</div>
+        <div style={{display:'flex',paddingLeft:'30px',fontFamily:'Roboto !important',color:'#FFFFFF'}}>Football</div>
+        <div style={{display:'flex',paddingLeft:'30px',fontFamily:'Roboto !important',color:'#FFFFFF'}}>New Delhi</div>
+        </div>
+        
+        <div className={b2}>
+        <div style={{display:'flex',paddingTop:'120px',paddingLeft:'30px',fontFamily:'Roboto !important',fontSize:'25px',fontWeight:'bold !important',color:'#FFFFFF'}}>Something To be Achieved</div>
+        <div style={{display:'flex',paddingLeft:'30px',fontFamily:'Roboto !important',color:'#FFFFFF'}}>Football</div>
+        <div style={{display:'flex',paddingLeft:'30px',fontFamily:'Roboto !important',color:'#FFFFFF'}}>New Delhi</div>
+        </div>
+        
+        <div className={b3}>
+        <div style={{display:'flex',paddingTop:'120px',paddingLeft:'30px',fontFamily:'Roboto !important',fontSize:'25px',fontWeight:'bold !important',color:'#FFFFFF'}}>Something To be Achieved</div>
+        <div style={{display:'flex',paddingLeft:'30px',fontFamily:'Roboto !important',color:'#FFFFFF'}}>Football</div>
+        <div style={{display:'flex',paddingLeft:'30px',fontFamily:'Roboto !important',color:'#FFFFFF'}}>New Delhi</div>
+        </div>
+
+        
+        <div className={b1}>
+        <div style={{display:'flex',paddingTop:'120px',paddingLeft:'30px',fontFamily:'Roboto !important',fontSize:'25px',fontWeight:'bold !important',color:'#FFFFFF'}}>Something To be Achieved</div>
+        <div style={{display:'flex',paddingLeft:'30px',fontFamily:'Roboto !important',color:'#FFFFFF'}}>Football</div>
+        <div style={{display:'flex',paddingLeft:'30px',fontFamily:'Roboto !important',color:'#FFFFFF'}}>New Delhi</div>
+        </div>
+        
+        <div className={b2}>
+        <div style={{display:'flex',paddingTop:'120px',paddingLeft:'30px',fontFamily:'Roboto !important',fontSize:'25px',fontWeight:'bold !important',color:'#FFFFFF'}}>Something To be Achieved</div>
+        <div style={{display:'flex',paddingLeft:'30px',fontFamily:'Roboto !important',color:'#FFFFFF'}}>Football</div>
+        <div style={{display:'flex',paddingLeft:'30px',fontFamily:'Roboto !important',color:'#FFFFFF'}}>New Delhi</div>
+        </div>
+        
+        <div className={b3}>
+        <div style={{display:'flex',paddingTop:'120px',paddingLeft:'30px',fontFamily:'Roboto !important',fontSize:'25px',fontWeight:'bold !important',color:'#FFFFFF'}}>Something To be Achieved</div>
+        <div style={{display:'flex',paddingLeft:'30px',fontFamily:'Roboto !important',color:'#FFFFFF'}}>Football</div>
+        <div style={{display:'flex',paddingLeft:'30px',fontFamily:'Roboto !important',color:'#FFFFFF'}}>New Delhi</div>
+        </div>
+        
+        <div className={b1}>
+        <div style={{display:'flex',paddingTop:'120px',paddingLeft:'30px',fontFamily:'Roboto !important',fontSize:'25px',fontWeight:'bold !important',color:'#FFFFFF'}}>Something To be Achieved</div>
+        <div style={{display:'flex',paddingLeft:'30px',fontFamily:'Roboto !important',color:'#FFFFFF'}}>Football</div>
+        <div style={{display:'flex',paddingLeft:'30px',fontFamily:'Roboto !important',color:'#FFFFFF'}}>New Delhi</div>
+        </div>
+        
+        <div className={b2}>
+        <div style={{display:'flex',paddingTop:'120px',paddingLeft:'30px',fontFamily:'Roboto !important',fontSize:'25px',fontWeight:'bold !important',color:'#FFFFFF'}}>Something To be Achieved</div>
+        <div style={{display:'flex',paddingLeft:'30px',fontFamily:'Roboto !important',color:'#FFFFFF'}}>Football</div>
+        <div style={{display:'flex',paddingLeft:'30px',fontFamily:'Roboto !important',color:'#FFFFFF'}}>New Delhi</div>
+        </div>
 
           </div>
+        </div>
+        
       </div>
+
+      </div>
+      
+     
     );
   }
 
