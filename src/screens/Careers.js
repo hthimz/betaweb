@@ -11,9 +11,6 @@ class LandingPage extends React.Component {
             <CareerBanner/>
             <div style={{borderBottomColor:'black', borderBottomWidth: '10px', paddingTop:'90px', fontSize :'34px', color: '#1b1e20'}}>Full-Time Opportunities</div>
             <div><CareersCard /></div>
-            <div style={{marginTop:'140px'}}><hr></hr></div>
-            <div style={{borderBottomColor:'black', borderBottomWidth: '10px', paddingTop:'20px', fontSize :'34px', color: '#1b1e20'}}>Internship Opportunities</div>
-            <div><Interns/></div>
             <div style= {{paddingTop:'150px'}}><Footer /></div>
         </div>
         );
