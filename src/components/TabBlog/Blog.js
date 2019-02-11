@@ -18,8 +18,8 @@ export default class Blog extends React.Component{
         return(
             <div style ={{backgroundColor:'#000000', margin:'0px !important',padding:'0px'}}>
             <div>
-            <div style ={{color: '#FFFFFF', display:'flex',fontFamily:'Roboto !important',fontWeight:'bold',fontSize:'25px'}}> goplaybook Blogs</div>
-            <div style={{color:'#FFFFFF',display:'flex',fontFamily:'Roboto !important',fontSize:'18px'}}>Follow all the interesting sports buzz Local or International, on goplaybook</div>
+            <div style ={{color: '#FFFFFF', display:'flex',fontFamily:'Rubik !important',fontWeight:'bold',fontSize:'25px'}}> goplaybook Blogs</div>
+            <div style={{color:'#FFFFFF',display:'flex',fontFamily:'Rubik !important',fontSize:'18px'}}>Follow all the interesting sports buzz Local or International, on goplaybook</div>
             </div>
                     <Slider {...settings}>
                     <div>

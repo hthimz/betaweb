@@ -1,8 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { maindivHeader, text, logo, textLight, shake } from './styles';
+import { NavLink,Link} from "react-router-dom";
+
 import classNames from 'classnames';
-import goplaybooklogo from '../../assets/goplaybooklogo.png';
+import goplaybooklogo from '../../assets/logo1.png';
 import playstore from '../../assets/playstoreicon.png';
 import apple from '../../assets/appstoreicon.png';
 // import shaker from '../..assets/download_app.png';
@@ -32,16 +34,18 @@ class Header extends React.PureComponent {
         >
         <div className={"d-flex"}>
           <a href='#about' style={{textDecoration: 'none'}}><div className={textLight}>About Us</div></a>
-          <a href='#blogs' style={{textDecoration: 'none'}}><div className={textLight}>Blogs</div></a>
-          <div href='#'className={textLight}>Partners Program</div>
+          {/* <a href='#blogs' style={{textDecoration: 'none'}}><div className={textLight}>Blogs</div></a> */}
+          {/* <div href='#'className={textLight}>Partners Program</div> */}
         </div>
-          <a href='http://www.goplaybook.com' style= {{textDecoration :'none'}}>
+          <NavLink to="/" style={{textDecoration:'none'}}>
+          <a style= {{textDecoration :'none', paddingLeft:'94px'}}>
           <div className={logo}>
                     <img src={goplaybooklogo} style={{height:'45px', width:'45px', marginRight: '20px'}} />
                     <div className={text}>goplaybook</div>
               </div> 
-          </a> 
-             <div className={logo}>
+          </a>
+          </NavLink>
+            <div className={logo}>
               <div className={classNames('shake-fixed shake-constant', shake)}>
                 <img src={shaker} style={{height:'30px', width:'30px', marginRight:'16px'}} />
             </div>

@@ -1,7 +1,7 @@
 import React from 'react'
 import { Card, Icon, Image } from 'semantic-ui-react';
 import classNames from 'classnames';
-import { center, card ,image, outer, content, header, fix, boxShadow} from './styles'
+import { center, card ,image, outer, content, header, fix, boxShadow} from './styles';
 // import { NewsHeaderCard } from 'react-ui-cards';
 
 
@@ -23,11 +23,14 @@ export default class CardExampleCard extends React.PureComponent {
     <div className={fix}>
         <Image  className={image} src={this.props.image} />
     </div>
+
     <div className={outer}>
     <Card.Content className= {content}>
         <Card.Header className= {header}>{this.props.Name}</Card.Header>        
             <Card.Meta className= {center}>
-            <span>{this.props.Designation}</span>
+            <span>
+            {this.props.Designation}
+            </span>
             </Card.Meta>
             <Card.Description className= {center}>{this.props.SportsType}</Card.Description>   
     </Card.Content>

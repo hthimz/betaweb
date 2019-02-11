@@ -34,8 +34,8 @@ export default class Blogs extends React.PureComponent {
   ]
   }
 
- blog = () => {
-   return (
+blog = () => {
+  return (
     <div id='blogs' style={{background: '#32a027', paddingTop: '50px'}}>
         <div style={{fontSize: '26px',fontWeight: 'bold', display:'flex', fontFamily:'Helvetica Neue', marginLeft:'100px', color:'white'}}>Blogs</div>
               <div style={{display:'flex', paddingTop: '10px', color:'white'}}>

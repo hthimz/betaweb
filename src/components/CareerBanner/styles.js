@@ -14,7 +14,7 @@ export const hero = css`
 export const doubleQuotes = css`
     width: 13.5px;
     height: 35.5px;
-    font-family: Helvetica Neue;
+    font-family: Rubik;
     font-size: 70px;
     font-weight: 500;
     font-style: normal;
@@ -28,7 +28,7 @@ export const text = css`
     height: 60px;
     display: flex;
     align-items: center;
-    font-family: Helvetica Neue;
+    font-family: Rubik;
     font-size: 32px;
     font-weight: 500;
     font-style: normal;
@@ -41,7 +41,7 @@ export const text = css`
 export const careerText = css`
     width: 360px;
     height: 190px;
-    font-family: Roboto;
+    font-family: Rubik;
     font-weight: bold;
     font-style: normal;
     font-stretch: normal;

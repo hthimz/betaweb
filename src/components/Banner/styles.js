@@ -38,7 +38,7 @@ export const home = css`
 display: flex;
 justify-content: center;
 align-items: center
-font-family: Helvetica Neue;
+font-family: Rubik;
 font-size: 1.2rem;
 font-weight: bold;
 font-stretch: condensed;
@@ -48,28 +48,28 @@ color: #000000;
 `
 
 export const bannerTextHeader = css`
-font-family: Helvetica Neue;
+font-family: Rubik;
 font-size: 1.2rem;
 font-weight: bold;
 font-stretch: condensed;
 display: flex;
 justify-content: flex-start;
-align-items: center;
+align-items: left;
 padding-left: 0.8rem;
 `
 
 
 export const bannerText = css`
-font-family: Helvetica Neue;
+
+font-family: Rubik;
 font-size: 14px;
 font-stretch: condensed;
 width: 270px;
 padding-left: 10px;
-
 `
 
 export const learnMore = css`
-font-family: Helvetica Neue;
+font-family: Rubik;
 font-size: 0.875rem;
 font-stretch: condensed;
 color: yellow;

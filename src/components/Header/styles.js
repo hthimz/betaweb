@@ -11,7 +11,7 @@ export const maindivHeader = css`
 `
 
 export const text = css`
-    font-family: Roboto;
+    font-family: Rubik;
     font-size: 1.6rem;
     padding-left: 0.5rem;
     font-weight: bold;
@@ -21,7 +21,7 @@ export const text = css`
 `
 
 export const textLight = css`
-    font-family: Roboto;
+    font-family: Rubik;
     font-size: 0.8rem;
     font-weight: bold;
     padding-left: 0.5rem;

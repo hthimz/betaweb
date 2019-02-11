@@ -8,7 +8,7 @@ export const center = css`
     display: flex;
     justify-content: center;
     padding-top : 5px;
-    font-family: Roboto;
+    font-family: Rubik;
     font-size: 14px;
     // font-weight: bold;
     color: #38454f;
@@ -43,7 +43,7 @@ justify-content: center;
 `
 
 export const header = css`
-font-family: 'Helvetica Neue';
+font-family: 'Rubik';
 font-stretch: condensed;
 font-size: 16px;
 color: #38454f;

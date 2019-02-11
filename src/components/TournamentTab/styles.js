@@ -5,7 +5,7 @@ export const indicator = css`
 `
 
 export const text = css`
-    font-family: Roboto;
+    font-family: Rubik;
     font-size: 1rem;
     font-weight: bold;
     padding-bottom: 7px;

@@ -108,13 +108,44 @@ class Banner extends React.Component {
       );
     }
   };
+
+// for clickable header section clickable Functionality
+// Click=(e) => {
+//   clearInterval(this.interval);
+//   return this.setState({ screen: e }, () => {
+//     setTimeout(() => {
+//       this.interval = setInterval(() => {
+//         let newVal;
+//         switch (this.state.screen) {
+//           case 0:
+//             newVal = 2;
+//             break;
+//           case 1:
+//             newVal = 0;
+//             break;
+//           case 2:
+//             newVal = 3;
+//             break;
+//           case 3:
+//             newVal = 1;
+//             break;
+//         }
+//         this.setState({
+//           screen: newVal % 4
+//         });
+//       }, 4000);
+//     }, 5000);
+//   });
+// }
+
+
   content = i => {
     // let textColor = this.state.screen === i ? 'white !important' : 'black';
     // console.log('\ni is ', i, '\n state is ', this.state.screen, '\ntextColor is ', textColor)
     switch (i) {
       case 0:
         return (
-          <div>
+          <div >
             <div
               className={bannerTextHeader}
               style={
@@ -125,7 +156,7 @@ class Banner extends React.Component {
             >
               Live Online Scoring
             </div>
-            <div
+            <div 
               className={bannerText}
               style={
                 this.state.screen === 0
@@ -141,7 +172,7 @@ class Banner extends React.Component {
         );
       case 1:
         return (
-          <div>
+          <div >
             <div
               className={bannerTextHeader}
               style={
@@ -168,7 +199,7 @@ class Banner extends React.Component {
         );
       case 2:
         return (
-          <div>
+          <div >
             <div
               className={bannerTextHeader}
               style={
@@ -195,7 +226,7 @@ class Banner extends React.Component {
         );
       case 3:
         return (
-          <div>
+          <div >
             <div
               className={bannerTextHeader}
               style={
@@ -220,6 +251,7 @@ class Banner extends React.Component {
             {/* <div className={learnMore}>Learn more.</div> */}
           </div>
         );
+        default : return(<div></div>);
     }
   };
 

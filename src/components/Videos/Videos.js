@@ -3,59 +3,61 @@ import Slider from "react-slick";
 import  {video} from './style';
 // import { thinLeft, thinRight } from 'react-icons-kit/entypo'
 import VideoCarousel from '../VideoCarousel/VideoCarousel';
+import YouTube from 'react-youtube';
 
 export default class Videos extends React.PureComponent {
-  constructor(props) {
-    super(props);
-    this.state = {
-      index: 0
-    }
-  }
-  image = (i,id) => {
-    return (
-      <div className={'w-100'}>
-        {/* <img
-        src='https://www.gettyimages.ca/gi-resources/images/Homepage/Hero/UK/CMS_Creative_164657191_Kingfisher.jpg'
-        style={this.state.index===i?{width:'700px', height:'350px', margin:'10px'}:{
-          width:'300px', height:'170px'
-        }}
-        /> */}
-        <VideoCarousel ID={id} active/>
-      </div>
-    );
-  }
-  beforeChange = (oldIndex, newIndex) => {
-    this.setState({index: newIndex}, ()=>{return;});
-  }
+
   render() {
-    var settings = {
-      dots: true,
-      infinite: true,
-      speed: 500,
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      // autoplay: true,
-      autoplaySpeed: 3000,
-      centerMode: true,
-      focusOnSelect: true,
-      centerPadding: "60px",
-      className: "center d-flex w-100 align-items-center",
-      variableWidth: true,
-      beforeChange: this.beforeChange,
-      accessibility: true
-    };
-    const id='6k-6Wi-HW5k';
+      const opts={
+        height: '300',
+        width: '590',
+        autoplay:'0',
+        playerVars:{'rel' :0}
+      }
+        
     return (
-      <div style={{ backgroundColor: '#ffffff', opacity:1}}>
+      <div style={{ backgroundColor: '#ffffff', opacity:1, paddingBottom:'40px'}}>
         <div className ={video}>
-          Social Media Presence
+          goplaybook gallery
         </div>
-      <div className={'d-flex justify-content-center mt-4'}>
-        {/* <Slider {...settings}> */}
-          <div className={'m-3'}>
-            {this.image(0,id)}
+      <div className={'d-flex justify-content-center mt-4'} style={{backgroundColor:'#fff', width:'1400px',marginLeft:'20px',borderRadius:'10px'}}>
+
+          <div className={'m-3'} style={{display:'flex',overflow:'auto',paddingTop:'15px', width: '1185px', whiteSpace:'nowrap',}}>
+          
+              <div id="FirstBox" style={{paddingLeft:'30px',paddingRight:'40px',borderRadius:'10px'}}>
+                <YouTube 
+                    videoId="OpPHyKqAVxw" style={{borderRadius:'20px'}}
+                    opts={opts}
+                />
+              </div>
+              <div style={{paddingRight:'40px'}}>
+                <YouTube 
+                    videoId="tzCtm-_yLY0"
+                    opts={opts}
+                    
+                />
+              </div>
+              <div style={{paddingRight:'40px'}}>
+                <YouTube 
+                    videoId="6k-6Wi-HW5k"
+                    opts={opts}
+                />
+              </div>
+              <div style={{paddingRight:'40px'}}>
+                <YouTube  
+                    videoId="bevRX0J-D8M"
+                    opts={opts}
+                />
+              </div>
+              <div style={{paddingRight:'40px'}}>
+                <YouTube 
+                    videoId="X6I17ZB2k70"
+                    opts={opts}
+                />
+              </div>
+
           </div>
-        {/* </Slider> */}
+
       </div>
       </div>
     );

@@ -12,25 +12,29 @@ import rashid from '../../assets/rashid.png';
 import ca from '../../assets/ca.png';
 import ajeet from '../../assets/ajeet.png';
 import laksh from '../../assets/laksh.png';
+import divyank from '../../assets/divyank.png';
+import sameer from '../../assets/sameer.png';
+import anonymus from '../../assets/anonymus.png';
+
 
 export default class CarouselComponent extends Component {
     response ={
         "data": [
         {
         "Name": "Avijeet Singh Gumber",
-        "Designation": "CEO,GoPlayBook",
+        "Designation": "Founder & CEO,goplayook",
         "SportsType": "Football & Cricket",
         "image" : avijeet
         },
         {
         "Name": "Himanshu Tomar",
-        "Designation": "Full stack Developer",
+        "Designation": "Javascript Front-End Engineer",
         "SportsType": "Basketball",
         "image" : hero
         },
         {
         "Name": "Anupam Pareek",
-        "Designation": "Product Manager",
+        "Designation": "Product Design Head",
         "SportsType": "Football",
         "image":anupam
             },
@@ -41,22 +45,22 @@ export default class CarouselComponent extends Component {
         "data" : [
             {
                 "Name": "Praveen Verma",
-                "Designation": "Lead Android Developer",
+                "Designation": "Lead Android Engineer",
                 "SportsType": "Cricket",
                 "image" :praveen
                         },
                 {
                 "Name": "Rashid Abdul Rahiman",
-                "Designation": "Digital Marketing Manager",
+                "Designation": "Digital Marketing",
                 "SportsType": "Football",
                 "image" : rashid
                     },
                 {
-                "Name": "Gautam Kapoor",
-                "Designation": "Financial Keeper",
-                "SportsType": "Football",
-                "image" :ca
-                    }
+                    "Name": "Sameer Sharma",
+                    "Designation": "Lead Backend Engineer",
+                    "SportsType": "Cricket",
+                    "image" :sameer
+                        }
         ]
     }
 
@@ -64,17 +68,53 @@ export default class CarouselComponent extends Component {
         "data" : [
             {
                 "Name": "Ajeet Chaudhary",
-                "Designation": "Community Manager (Cricket)",
+                "Designation": "Business Analyst",
                 "SportsType": "Cricket",
                 "image" :ajeet
                         },
                 {
                 "Name": "Laksh Rajpal",
-                "Designation": "Community Manager (Football)",
+                "Designation": "Business Developer",
                 "SportsType": "Football",
                 "image":laksh
 
-                    }
+                    },
+                {
+                    "Name": "Gautam Kapoor",
+                    "Designation": "Accounts & Finance",
+                    "SportsType": "Football",
+                    "image" :ca
+                        }
+        ]
+    }
+
+    response3 ={
+        "data" : [
+            {
+                "Name": "Divyank Vijayvergia",
+                "Designation": "Android Developer",
+                "SportsType": "Cricket",
+                "image" :divyank
+                        },
+            {
+                "Name":"Sachin",
+                "Designation":"iOS Developer",
+                "SportsType":"Cricket",
+                "image":anonymus
+            },
+            {
+                "Name":"Nikhil",
+                "Designation":"Backend Developer",
+                "SportsType":"Cricket",
+                "image":anonymus,
+            },
+            {
+                "Name":"Manoj",
+                "Designation":"React Developer",
+                "SportsType":"Football",
+                "image":anonymus
+
+            }
         ]
     }
     
@@ -104,17 +144,26 @@ export default class CarouselComponent extends Component {
                 }
             </div>
             );
+            case 4: return (
+                <div style={{display:'flex', justifyContent: 'space-around', backgroundColor:'#32a027'}} className={"px-5 pb-5"}>
+                {
+                this.response3.data.map(e=>
+                    <Card Name= {e.Name} Designation={e.Designation}  SportsType={e.SportsType} image={e.image}/>)
+                }
+            </div>
+            );
+            
         }
     }
 
     render() {
         return (
             <div style={{background: '#32a027'}}>
-                <div style={{display :'flex',fontSize: '26px',fontWeight: 'bold', fontFamily:'Helvetica Neue', marginLeft:'100px', marginTop:'66px', paddingTop: '30px', color:'white'}}>
-                    GoPlayBook Team
+                <div style={{display :'flex',fontSize: '26px',fontWeight: 'bold', fontFamily:'Rubik', marginLeft:'100px', marginTop:'66px', paddingTop: '30px', color:'white'}}>
+                    goplaybook Team
                 </div>
                 <div style={{display:'flex', paddingTop: '10px', color:'white'}}>
-                    <div className={header}>The Reason why GoPlayBook exists today.</div>
+                    <div className={header}>The Reason why goplaybook exists today.</div>
                 </div>
                     <Carousel
                         autoPlay
@@ -127,6 +176,7 @@ export default class CarouselComponent extends Component {
                         {this.slider(1)}
                         {this.slider(2)}
                         {this.slider(3)}
+                        {this.slider(4)}
                     </Carousel>
             </div>
         );
